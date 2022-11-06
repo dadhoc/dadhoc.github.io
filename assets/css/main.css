@@ -1,10 +1,11 @@
 :root {
     /* Background images */
-    --head-favicon: url("/assets/images/favicon.png")
+    --head-favicon: url("/assets/images/favicon.png");
     --header-bg-image: url();
     --body-bg-image: url('/assets/images/background1.png');
-    /* Colour definitions */
-
+    /* Colour palette */
+    --desktop: #008080;
+    --taskbar: #818181;
 }
 
 @font-face {
@@ -19,12 +20,11 @@ h1 {
     margin-right: 10px;
 }
 
-body{
+body {
     background-image: var(--body-bg-image);
 
 }
 
 .desktop {
-    
 
 }
