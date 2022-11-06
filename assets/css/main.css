@@ -1,0 +1,30 @@
+:root {
+    /* Background images */
+    --head-favicon: url("/assets/images/favicon.png")
+    --header-bg-image: url();
+    --body-bg-image: url('/assets/images/background1.png');
+    /* Colour definitions */
+
+}
+
+@font-face {
+    font-family: W95FA;
+    src: url('/assets/Fonts/W95FA/W95FA.woff');
+}
+
+h1 {
+    background-color: #008080;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+body{
+    background-image: var(--body-bg-image);
+
+}
+
+.desktop {
+    
+
+}
