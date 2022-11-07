@@ -1,7 +1,7 @@
 /* Colour Palette */
 /* Background images */
 body {
-  background-image: url("/assets/images/background1.png");
+  background-image: url("../../assets/images/background1.png");
   font-family: W95FA;
   padding: 10px;
 }
