@@ -1,6 +1,8 @@
 // Main Files
-@use './global/main';
-@use './components/desktop';
+@use "./global/main";
+
+// Components
+@use "./components/desktop";
 
 // Helpers
-@use './helpers/variables';
+@use "./helpers/variables";

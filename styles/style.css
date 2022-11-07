@@ -1,7 +1,7 @@
 /* Colour Palette */
 /* Background images */
 body {
-  background-image: url("../../assets/images/background1.png");
+  background-image: url("/assets/images/backgrounds/background1.png");
   font-family: W95FA;
   padding: 10px;
 }
@@ -14,8 +14,7 @@ a {
   text-decoration: none;
 }
 
-p,
-h6 {
+p {
   margin: 0;
 }
 
@@ -35,9 +34,6 @@ h1 {
   max-height: 75vh;
   aspect-ratio: 4/3;
 }
-.desktop p {
-  color: #ffffff;
-}
 
 .icon {
   height: -webkit-min-content;
@@ -51,10 +47,16 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 30px;
 }
-.icon a h6 {
+.icon a img {
+  height: 3rem;
+}
+.icon a p {
   color: #fdffff;
   padding-top: 5px;
+  text-align: center;
+  white-space: nowrap;
   text-shadow: 1px 1px black;
 }
 
