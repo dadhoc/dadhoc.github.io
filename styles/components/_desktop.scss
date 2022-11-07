@@ -1,0 +1,43 @@
+@use '../helpers/variables.scss' as *;
+
+.desktop {
+  display: grid;
+  background-color: $teal;
+  font-family: "W95FA";
+
+  section {
+    flex-direction: column;
+    padding: 1rem;
+    max-height: 75vh;
+    aspect-ratio: 4/3;
+  }
+
+  p {
+    color: #ffffff;
+  }
+}
+
+.icon {
+  height: min-content;
+  width: min-content;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h6 {
+      color: #fdffff;
+      padding-top: 5px;
+      text-shadow: 1px 1px black;
+    }
+  }
+}
+
+.taskbar {
+  background: $taskbar;
+  width: 100%;
+  height: 2rem;
+  padding-top: 10px;
+  box-shadow: inset 0px 1px #c3c3c3, inset 0px 2px #fdffff;
+}

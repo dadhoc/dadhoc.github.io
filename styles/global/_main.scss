@@ -1,0 +1,26 @@
+@use '../helpers/variables' as *;
+
+body {
+  background-image: $body-bg-image;
+  font-family: W95FA;
+  padding: 10px;
+}
+
+@font-face {
+  font-family: W95FA;
+  src: url("/assets/Fonts/W95FA/W95FA.woff");
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  background-color: $teal;
+  flex-direction: row;
+}
