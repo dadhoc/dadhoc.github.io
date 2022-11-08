@@ -1,0 +1,28 @@
+/* Colour Palette */
+/* Background images */
+body {
+  background-color: black;
+  font-family: W95FA;
+  padding: 10px;
+}
+
+@font-face {
+  font-family: W95FA;
+  src: url("/assets/Fonts/W95FA/w95fa.woff");
+}
+.postlogo {
+  box-shadow: inset 1px 1px #fdffff, inset -1px -1px #fdffff;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+  white-space: wrap;
+  width: 95vw;
+  height: 95vh;
+  padding: 5px;
+}
+.postlogo pre {
+  color: #fdffff;
+  font-size: 7pt;
+}/*# sourceMappingURL=post.css.map */

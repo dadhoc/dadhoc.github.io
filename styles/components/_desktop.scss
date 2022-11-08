@@ -1,4 +1,4 @@
-@use '../helpers/variables' as *;
+@use "../helpers/variables" as *;
 
 .desktop {
   display: grid;
@@ -11,14 +11,12 @@
     max-height: 75vh;
     aspect-ratio: 4/3;
   }
-
-
 }
 
 .icon {
   height: min-content;
   width: min-content;
-  
+
   a {
     display: flex;
     flex-direction: column;
