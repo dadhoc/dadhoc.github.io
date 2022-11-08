@@ -7,6 +7,10 @@ body {
   background-color: black;
   font-family: W95FA;
   padding: 10px;
+
+  a:visited {
+    color: hsl(0, 100%, 30%);
+  }
 }
 
 @font-face {
@@ -14,25 +18,63 @@ body {
   src: url("/assets/Fonts/W95FA/w95fa.woff");
 }
 
+@keyframes blinker {
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    color: red;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    color: #fdffff;
+  }
+}
+
 // Component
 .post {
+  // Logo
   &logo {
-    box-shadow: inset 1px 1px #fdffff, inset -1px -1px #fdffff;
     display: flex;
     flex-direction: column;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    align-items: flex-start;
 
-    text-align: justify;
-    text-justify: inter-word;
     white-space: wrap;
     width: 95vw;
-    height: 95vh;
+    height: min-content;
 
     padding: 5px;
 
     pre {
       color: #fdffff;
-      font-size: 7pt;
+      font-size: 0.3rem;
     }
+  }
+
+  // Rest of POST screen
+  p {
+    color: #fdffff;
+
+    a {
+      text-decoration: none;
+    }
+  }
+  
+  pre {
+    color: #fdffff;
+    font-size: normal;
+
+    span {
+      color: red;
+    }
+  }
+
+  .blink {
+    animation: blinker 3s step-start infinite;
   }
 }

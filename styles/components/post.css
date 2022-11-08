@@ -5,24 +5,76 @@ body {
   font-family: W95FA;
   padding: 10px;
 }
+body a:visited {
+  color: hsl(0deg, 100%, 30%);
+}
 
 @font-face {
   font-family: W95FA;
   src: url("/assets/Fonts/W95FA/w95fa.woff");
 }
+@-webkit-keyframes blinker {
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    color: red;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    color: #fdffff;
+  }
+}
+@keyframes blinker {
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    color: red;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    color: #fdffff;
+  }
+}
 .postlogo {
-  box-shadow: inset 1px 1px #fdffff, inset -1px -1px #fdffff;
   display: flex;
   flex-direction: column;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  text-align: justify;
-  text-justify: inter-word;
+  align-items: flex-start;
   white-space: wrap;
   width: 95vw;
-  height: 95vh;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   padding: 5px;
 }
 .postlogo pre {
   color: #fdffff;
-  font-size: 7pt;
+  font-size: 0.3rem;
+}
+.post p {
+  color: #fdffff;
+}
+.post p a {
+  text-decoration: none;
+}
+.post pre {
+  color: #fdffff;
+  font-size: normal;
+}
+.post pre span {
+  color: red;
+}
+.post .blink {
+  -webkit-animation: blinker 3s step-start infinite;
+          animation: blinker 3s step-start infinite;
 }/*# sourceMappingURL=post.css.map */
