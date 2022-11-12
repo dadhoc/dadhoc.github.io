@@ -2,6 +2,10 @@
 
 $taskbar: #818181;
 
+.wrapper {
+  padding: 10px;
+}
+
 .desktop {
   display: grid;
   background-color: $teal;
