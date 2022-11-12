@@ -1,18 +1,22 @@
-@use '../helpers/variables' as *;
+@use "../helpers/variables" as *;
 
 body {
   background-image: $body-bg-image;
-  font-family: W95FA;
+  font-family: "W95FA", monospace;
   padding: 10px;
 }
 
 @font-face {
-  font-family: W95FA;
+  font-family: "W95FA";
   src: url("/assets/Fonts/W95FA/W95FA.woff");
 }
 
 a {
   text-decoration: none;
+
+  &:visited {
+    color: hsl(0deg 100% 30%);
+  }
 }
 
 p {

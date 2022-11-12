@@ -1,0 +1,103 @@
+@use "../helpers/variables" as *;
+
+.postlogo {
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  align-items: flex-start;
+  white-space: wrap;
+  width: 95vw;
+  height: min-content;
+  padding: 5px;
+
+  pre {
+    color: #fdffff;
+    font-size: 0.3rem;
+  }
+}
+
+.post {
+  p {
+    color: #fdffff;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  pre {
+    color: #fdffff;
+    font-size: normal;
+
+    a {
+      text-decoration: none;
+
+      img {
+        height: 32px;
+        width: 88px;
+      }
+    }
+
+    span {
+      color: red;
+    }
+  }
+
+  .blink {
+    animation: blinker 3s step-start infinite;
+  }
+}
+
+.postbuttons {
+  font-size: 1.65rem;
+
+  a {
+    font-size: 1rem;
+  }
+}
+
+footer {
+  color: #fdffff;
+  font-size: 0.3rem;
+}
+
+/* Keyframes */
+@keyframes blinker {
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    color: red;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    color: #fdffff;
+  }
+}
+
+@keyframes blinker {
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    color: red;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    color: #fdffff;
+  }
+}
