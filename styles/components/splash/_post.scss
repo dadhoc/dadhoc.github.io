@@ -22,8 +22,13 @@ $red: red;
 }
 
 .post {
+  display: flex;
+  padding: 0 3rem;
+  
   p {
     color: $white;
+    font-family: monospace;
+    font-size: 13px;
 
     a {
       text-decoration: none;
@@ -46,6 +51,11 @@ $red: red;
     span {
       color: $red;
     }
+  }
+
+  .horizontal {
+    display: flex;
+    
   }
 
   .blink {
