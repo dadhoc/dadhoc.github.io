@@ -10,6 +10,9 @@ lerna-debug.log*
 # Dependency directory
 node_modules/
 
+# Visual Editors
+.vscode
+
 # SCSS
 *.css.map
 *.sass.map
