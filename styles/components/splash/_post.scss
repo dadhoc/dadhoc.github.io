@@ -1,4 +1,9 @@
-@use "../helpers/variables" as *;
+$white: #fdffff;
+$red: red;
+
+.splash {
+  background: black;
+}
 
 .postlogo {
   display: flex;
@@ -11,14 +16,14 @@
   padding: 5px;
 
   pre {
-    color: #fdffff;
+    color: $white;
     font-size: 0.3rem;
   }
 }
 
 .post {
   p {
-    color: #fdffff;
+    color: $white;
 
     a {
       text-decoration: none;
@@ -26,7 +31,7 @@
   }
 
   pre {
-    color: #fdffff;
+    color: $white;
     font-size: normal;
 
     a {
@@ -39,7 +44,7 @@
     }
 
     span {
-      color: red;
+      color: $red;
     }
   }
 
@@ -57,7 +62,7 @@
 }
 
 footer {
-  color: #fdffff;
+  color: $white;
   font-size: 0.3rem;
 }
 
@@ -69,7 +74,7 @@ footer {
 
   50% {
     opacity: 1;
-    color: red;
+    color: $red;
   }
 
   75% {
@@ -78,7 +83,7 @@ footer {
 
   100% {
     opacity: 1;
-    color: #fdffff;
+    color: $white;
   }
 }
 
@@ -89,7 +94,7 @@ footer {
 
   50% {
     opacity: 1;
-    color: red;
+    color: $red;
   }
 
   75% {
@@ -98,6 +103,6 @@ footer {
 
   100% {
     opacity: 1;
-    color: #fdffff;
+    color: $white;
   }
 }
