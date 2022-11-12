@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "doiuse": "^4.4.1",
+    "scss": "^0.2.4",
+    "stylelint": "^14.14.1"
+  },
+  "devDependencies": {
+    "stylelint-config-recommended": "^9.0.0"
+  }
+}
