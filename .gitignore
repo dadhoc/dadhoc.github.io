@@ -7,9 +7,13 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
-
 # Dependency directory
 node_modules/
 
-# Miscellaneous 
-**/reference shit/
+# SCSS
+*.css.map
+*.sass.map
+*.scss.map
+
+# Miscellaneous
+reference
