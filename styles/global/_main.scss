@@ -2,17 +2,21 @@
 
 body {
   background-image: $body-bg-image;
-  font-family: W95FA;
-  padding: 10px;
+  font-family: 'W95FA', monospace;
+  margin: 0;
 }
 
 @font-face {
-  font-family: W95FA;
-  src: url("/assets/Fonts/W95FA/W95FA.woff");
+  font-family: 'W95FA';
+  src: url('/assets/fonts/W95FA/W95FA.otf') format('woff');
 }
 
 a {
   text-decoration: none;
+
+  &:visited {
+    color: hsl(0deg 100% 30%);
+  }
 }
 
 p {

@@ -1,0 +1,118 @@
+$white: #fdffff;
+$red: red;
+
+.splash {
+  background: black;
+}
+
+.postlogo {
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  align-items: flex-start;
+  white-space: wrap;
+  width: 95vw;
+  height: min-content;
+  padding: 5px;
+
+  pre {
+    color: $white;
+    font-size: 0.3rem;
+  }
+}
+
+.post {
+  display: flex;
+  padding: 0 3rem;
+  
+  p {
+    color: $white;
+    font-family: monospace;
+    font-size: 13px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  pre {
+    color: $white;
+    font-size: normal;
+
+    a {
+      text-decoration: none;
+
+      img {
+        height: 32px;
+        width: 88px;
+      }
+    }
+
+    span {
+      color: $red;
+    }
+  }
+
+  .horizontal {
+    display: flex;
+    
+  }
+
+  .blink {
+    animation: blinker 3s step-start infinite;
+  }
+}
+
+.postbuttons {
+  font-size: 1.65rem;
+
+  a {
+    font-size: 1rem;
+  }
+}
+
+footer {
+  color: $white;
+  font-size: 0.3rem;
+}
+
+/* Keyframes */
+@keyframes blinker {
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    color: $red;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    color: $white;
+  }
+}
+
+@keyframes blinker {
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    color: $red;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    color: $white;
+  }
+}
