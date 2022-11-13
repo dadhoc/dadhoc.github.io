@@ -3,6 +3,7 @@ $red: red;
 
 .splash {
   background: black;
+  height: 100vh;
 }
 
 .postlogo {
@@ -115,4 +116,8 @@ footer {
     opacity: 1;
     color: $white;
   }
+}
+
+#post{
+  background-color: black;
 }
