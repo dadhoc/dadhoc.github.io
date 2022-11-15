@@ -149,4 +149,13 @@ h1 {
 
 #post {
   background-color: black;
+}
+
+#scratchpad {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }/*# sourceMappingURL=style.css.map */

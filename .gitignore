@@ -20,5 +20,5 @@ node_modules/
 
 
 # Miscellaneous
-/reference
-/images/aseprite
+reference/
+images/aseprite/

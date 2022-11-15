@@ -1,6 +1,4 @@
-@use '../../helpers/variables' as *;
-
-$taskbar: #818181;
+@use "../../helpers/variables" as *;
 
 .wrapper {
   padding: 10px;
@@ -9,12 +7,14 @@ $taskbar: #818181;
 .desktop {
   display: grid;
   background-color: $teal;
-  font-family: 'W95FA', monospace;
+  font-family: "W95FA", monospace;
 
   section {
     flex-direction: column;
     padding: 1rem;
     max-height: 75vh;
+    margin: auto;
+    width: auto;
     aspect-ratio: 4/3;
   }
 }
@@ -43,10 +43,52 @@ $taskbar: #818181;
   }
 }
 
+// Window elements
+
+.windowheader {
+  display: flex;
+  flex-direction: row;
+  justify-items: stretch;
+  justify-content: space-between;
+  align-items: center;
+  
+  background: $windowheader;
+  width: 100%;
+  height: 1.5rem;
+
+  .icon{
+    padding: 2px;
+    max-width: 1.3rem;
+    max-height: 1.3rem;
+  }
+
+  .buttons{
+    margin-left: auto;
+  }
+}
+
+.window{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 5px;
+  padding: 5px;
+  box-shadow:inset -1px -1px black,
+              inset -2px -2px $taskbarmid,
+              inset 1px 1px $taskbarlight,
+              inset 2px 2px $taskbarmid;
+
+  background-color: $taskbardark;
+
+  section{
+    background-color: $white;
+  }
+}
+
 .taskbar {
-  background: $taskbar;
+  background: $taskbardark;
   width: 100%;
   height: 2rem;
   padding-top: 10px;
-  box-shadow: inset 0 1px #c3c3c3, inset 0 2px $white;
+  box-shadow: inset 0 1px $taskbarmid, inset 0 2px $taskbarlight;
 }

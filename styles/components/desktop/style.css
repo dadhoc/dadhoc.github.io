@@ -30,6 +30,15 @@ h1 {
   background-color: black;
 }
 
+#scratchpad {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .wrapper {
   padding: 10px;
 }
@@ -43,6 +52,8 @@ h1 {
   flex-direction: column;
   padding: 1rem;
   max-height: 75vh;
+  margin: auto;
+  width: auto;
   aspect-ratio: 4/3;
 }
 
@@ -71,10 +82,42 @@ h1 {
   text-shadow: 1px 1px black;
 }
 
+.windowheader {
+  display: flex;
+  flex-direction: row;
+  justify-items: stretch;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(0.25turn, #000080, #0F83CF);
+  width: 100%;
+  height: 1.5rem;
+}
+.windowheader .icon {
+  padding: 2px;
+  max-width: 1.3rem;
+  max-height: 1.3rem;
+}
+.windowheader .buttons {
+  margin-left: auto;
+}
+
+.window {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 5px;
+  padding: 5px;
+  box-shadow: inset -1px -1px black, inset -2px -2px #d8d8d8, inset 1px 1px #ebebeb, inset 2px 2px #d8d8d8;
+  background-color: #c0c0c0;
+}
+.window section {
+  background-color: #fdffff;
+}
+
 .taskbar {
-  background: #818181;
+  background: #c0c0c0;
   width: 100%;
   height: 2rem;
   padding-top: 10px;
-  box-shadow: inset 0 1px #c3c3c3, inset 0 2px #fdffff;
+  box-shadow: inset 0 1px #d8d8d8, inset 0 2px #ebebeb;
 }/*# sourceMappingURL=style.css.map */

@@ -1,14 +1,14 @@
-@use '../helpers/variables' as *;
+@use "../helpers/variables" as *;
 
 body {
   background-image: $body-bg-image;
-  font-family: 'W95FA', monospace;
+  font-family: "W95FA", monospace;
   margin: 0;
 }
 
 @font-face {
-  font-family: 'W95FA';
-  src: url('/assets/fonts/W95FA/W95FA.otf') format('woff');
+  font-family: "W95FA";
+  src: url("/assets/fonts/W95FA/W95FA.otf") format("woff");
 }
 
 a {
@@ -28,6 +28,13 @@ h1 {
   flex-direction: row;
 }
 
-#post{
+#post {
   background-color: black;
+}
+
+#scratchpad {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
 }
