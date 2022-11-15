@@ -18,5 +18,7 @@ node_modules/
 *.sass.map
 *.scss.map
 
+
 # Miscellaneous
-reference files
+/reference
+/images/aseprite
