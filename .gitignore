@@ -18,7 +18,8 @@ node_modules/
 *.sass.map
 *.scss.map
 
+#window template
+window_template.html
 
 # Miscellaneous
 reference/
-images/aseprite/
