@@ -13,9 +13,6 @@ body {
 a {
   text-decoration: none;
 }
-a:visited {
-  color: hsl(0deg, 100%, 30%);
-}
 
 p {
   margin: 0;
