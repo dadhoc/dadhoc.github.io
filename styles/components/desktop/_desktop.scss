@@ -127,9 +127,12 @@
       }
 
       &credits {
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         font-size: 1.3rem;
-      }
+        padding: 10px;
+        }
     }
   }
 

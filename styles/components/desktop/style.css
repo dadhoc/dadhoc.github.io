@@ -151,8 +151,11 @@ h1 {
   margin: 0.5rem;
 }
 .window .contentbuttonscredits {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 1.3rem;
+  padding: 10px;
 }
 .window section {
   margin-top: 2px;
