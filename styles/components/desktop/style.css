@@ -24,7 +24,7 @@ h1 {
 }
 
 #post {
-  background-color: black;
+  background: black;
 }
 
 #scratchpad {
@@ -41,7 +41,7 @@ h1 {
 }
 
 .desktop {
-  display: grid;
+  display: block;
   background-color: #008080;
   font-family: "W95FA", monospace;
 }
@@ -79,6 +79,7 @@ h1 {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
+  position: static;
 }
 .icon a {
   display: flex;
@@ -95,6 +96,29 @@ h1 {
   text-align: center;
   white-space: nowrap;
   text-shadow: 1px 1px black;
+}
+
+.taskbar {
+  display: flex;
+  flex-flow: row;
+  background: #c0c0c0;
+  width: 100%;
+  height: 2rem;
+  padding-top: 10px;
+  box-shadow: inset 0 1px #d8d8d8, inset 0 2px #ebebeb;
+}
+
+#StartMenu {
+  min-width: 15rem;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  padding: 5px;
+  text-align: center;
+  background-color: #d8d8d8;
+  z-index: 9;
+  position: absolute;
+  bottom: 1rem;
 }
 
 .windowheader {
@@ -187,14 +211,6 @@ h1 {
 }
 .statusbarinsetwords {
   font-size: 0.8rem;
-}
-
-.taskbar {
-  background: #c0c0c0;
-  width: 100%;
-  height: 2rem;
-  padding-top: 10px;
-  box-shadow: inset 0 1px #d8d8d8, inset 0 2px #ebebeb;
 }
 
 .divider {

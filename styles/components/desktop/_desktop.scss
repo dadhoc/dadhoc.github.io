@@ -7,10 +7,10 @@
 // Desktop styling
 
 .desktop {
-  display: grid;
+  display: block;
   background-color: $teal;
   font-family: "W95FA", monospace;
-
+  
   section {
     display: flex;
     flex-direction: column;
@@ -44,6 +44,7 @@
 .icon {
   height: min-content;
   width: min-content;
+  position: static;
 
   a {
     display: flex;
@@ -63,6 +64,34 @@
       text-shadow: 1px 1px black;
     }
   }
+}
+
+.taskbar {
+  display: flex;
+  flex-flow: row;
+  background: $taskbardark;
+  width: 100%;
+  height: 2rem;
+  padding-top: 10px;
+  box-shadow: inset 0 1px $taskbarmid, inset 0 2px $taskbarlight;
+}
+
+// Start Menu elements
+
+//.StartButton {}
+
+#StartMenu {
+  min-width: 15rem;
+  min-height: fit-content;
+  padding: 5px;
+
+  text-align: center;
+  background-color: $taskbarmid;
+//  display: none;
+  z-index: 9;
+  position: absolute;
+  bottom: 1rem;
+  
 }
 
 // Window elements
@@ -172,14 +201,6 @@
       font-size: 0.8rem;
     }
   }
-}
-
-.taskbar {
-  background: $taskbardark;
-  width: 100%;
-  height: 2rem;
-  padding-top: 10px;
-  box-shadow: inset 0 1px $taskbarmid, inset 0 2px $taskbarlight;
 }
 
 .divider {
