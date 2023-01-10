@@ -76,24 +76,6 @@
   box-shadow: inset 0 1px $taskbarmid, inset 0 2px $taskbarlight;
 }
 
-// Start Menu elements
-
-//.StartButton {}
-
-#StartMenu {
-  min-width: 15rem;
-  min-height: fit-content;
-  padding: 5px;
-
-  text-align: center;
-  background-color: $taskbarmid;
-//  display: none;
-  z-index: 9;
-  position: absolute;
-  bottom: 1rem;
-  
-}
-
 // Window elements
 
 .windowheader {
