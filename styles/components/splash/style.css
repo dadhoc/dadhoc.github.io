@@ -1,3 +1,43 @@
+/* Colour Palette */
+/* Background images */
+body {
+  background-image: url("/assets/images/backgrounds/background1.png");
+  font-family: "W95FA", monospace;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "W95FA";
+  src: url("/assets/fonts/W95FA/W95FA.otf") format("woff");
+}
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  background-color: #008080;
+  flex-direction: row;
+}
+
+#post {
+  background: black;
+}
+
+#scratchpad {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+/* Colour Palette */
+/* Background images */
 .splash {
   background: black;
   height: 100vh;
@@ -59,6 +99,10 @@
   -webkit-animation: blinker 3s step-start infinite;
           animation: blinker 3s step-start infinite;
 }
+.post .blinkwhite {
+  -webkit-animation: blinkerwhite 3s step-start infinite;
+          animation: blinkerwhite 3s step-start infinite;
+}
 
 .postbuttons {
   font-size: 1.65rem;
@@ -70,6 +114,23 @@
 footer {
   color: #fdffff;
   font-size: 0.3rem;
+}
+
+.osname {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+.osname p {
+  color: #000080;
+  text-align: center;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1rem;
+  width: 95px;
+  height: 1.3rem;
+  background-color: #c0c0c0;
 }
 
 @-webkit-keyframes blinker {
@@ -105,60 +166,49 @@ footer {
     color: #fdffff;
   }
 }
-@keyframes blinker {
+@-webkit-keyframes blinkerwhite {
   25% {
     opacity: 0;
   }
   50% {
     opacity: 1;
-    color: red;
   }
   75% {
     opacity: 0;
   }
   100% {
     opacity: 1;
-    color: #fdffff;
+  }
+}
+@keyframes blinkerwhite {
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 #post {
   background-color: black;
-}
-
-/* Colour Palette */
-/* Background images */
-body {
-  background-image: url("/assets/images/backgrounds/background1.png");
-  font-family: "W95FA", monospace;
-  margin: 0;
-}
-
-@font-face {
   font-family: "W95FA";
-  src: url("/assets/fonts/W95FA/W95FA.otf") format("woff");
-}
-a {
-  text-decoration: none;
 }
 
-p {
-  margin: 0;
-}
-
-h1 {
-  background-color: #008080;
-  flex-direction: row;
-}
-
-#post {
-  background: black;
-}
-
-#scratchpad {
+#error {
+  background: #000080;
+  font-family: "W95FA";
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  max-height: 75vh;
+  margin: auto;
+  width: auto;
+  aspect-ratio: 4/3;
 }/*# sourceMappingURL=style.css.map */
