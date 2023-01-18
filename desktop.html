@@ -8,56 +8,66 @@
     <link rel="stylesheet" href="/styles/components/desktop/style.css" />
     <link rel="icon" type="image/png" href="/assets/Images/favicon.png" />
     <!-- Scripts -->
-    <script
-      type="text/javascript"
-      src="/assets/scripts/js/startmenu.js"
-    ></script>
+    <script src="/assets/scripts/js/startmenu.js" defer></script>
   </head>
 
   <body>
     <div class="wrapper">
-    
-    <div class="wrapperinner">
-<!--      <h1 align="center">WELCOME TO DADHOC.NET</h1> -->
+      <div class="wrapperinner">
+        <!--      <h1 align="center">WELCOME TO DADHOC.NET</h1> -->
 
-      <main class="desktopmain">
-        <section>
-          <!-- Icons -->
-          <!-- Writing -->
-          <div class="icon">
-            <a href="http://www.pudim.com.br">
-              <img src="/assets/images/icons/mycomputer.png" />
-              <p alt-text="Writing">My Computer</p>
-              <p>[Writing]</p>
-            </a>
+        <main class="desktopmain">
+          <section>
+            <!-- Icons -->
+            <!-- Writing -->
+            <div class="icon">
+              <a href="http://www.pudim.com.br">
+                <img src="/assets/images/icons/mycomputer.png" />
+                <p alt-text="Writing">My Computer</p>
+                <p>[Writing]</p>
+              </a>
+            </div>
+
+            <div class="icon">
+              <a href="/about.html">
+                <img src="/assets/images/icons/about.png" />
+                <p alt-text="About">About</p>
+              </a>
+            </div>
+          </section>
+
+        </main>
+        
+        <div class="taskbar">
+          <div class="taskbarinset" style="width: 10rem">
+            <!-- StartMenu must be here -->
+            <div id="StartMenu">
+              <p>test</p>
+            </div>              
+            <img src="assets/images/favicon.png" />
+            <!--
+              <button id="taskbar-toggle">
+                Some content here
+              </button>
+            -->
           </div>
-
-          <div class="icon">
-            <a href="/about.html">
-              <img src="/assets/images/icons/about.png" />
-              <p alt-text="About">About</p>
-            </a>
-          </div>
-        </section>
-
-        <section>
-          <div id="StartMenu">
-            <p>test</p>
-          </div>
-        </section>
-
-
-      </main>
-
-      <div class="taskbar">
-
-        <div class="taskbarinset" style="width: 10rem;">
-
-          <img src="assets/images/favicon.png"
-
         </div>
       </div>
     </div>
-  </div>
   </body>
+
+  <!-- Example of event listener
+    Must be at the end, after body
+  <script>
+    const button = document.getElementById('taskbar-toggle');
+    button.addEventListener('click', () => {
+      const menu = document.getElementById('StartMenu');
+      if (menu.style.display === 'none') {
+        menu.style.display = 'block';
+      } else {
+        menu.style.display = 'none';
+      }
+    });
+  </script>
+  -->
 </html>
