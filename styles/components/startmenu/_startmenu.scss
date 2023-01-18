@@ -1,21 +1,16 @@
-@use "../../helpers/variables" as *;
+@use '../../helpers/variables' as *;
 
 // Start Menu elements
 
 //.StartButton {}
 
 #StartMenu {
-    min-width: 15rem;
-    min-height: fit-content;
-    padding: 5px;
-  
-    text-align: center;
-    background-color: $taskbarmid;
-    display: none;
-    z-index: 9;
-    position: sticky;
-    top: 10rem;
-    
-  }
-  
-  
+  display: none;
+  position: absolute;
+  min-height: 5rem;
+  padding: 5px;
+  text-align: center;
+  background-color: $taskbarmid;
+  z-index: 9;
+  bottom: 1rem;
+}
