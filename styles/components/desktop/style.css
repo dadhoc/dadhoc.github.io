@@ -31,7 +31,6 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -89,10 +88,8 @@ h1 {
 }
 
 .icon {
-  height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
   position: static;
@@ -115,7 +112,7 @@ h1 {
 }
 
 .taskbar {
-  display: grid;
+  display: flex;
   flex-flow: row;
   background: #c0c0c0;
   width: auto;
@@ -130,6 +127,16 @@ h1 {
   align-items: center;
   border-style: inset;
   background: #d8d8d8;
+  padding: 0.1rem;
+}
+.taskbarpopout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-style: outset;
+  max-height: 1.45rem;
+  background: #c0c0c0;
   padding: 0.1rem;
 }
 
@@ -161,7 +168,6 @@ h1 {
   min-height: 100%;
   border: 5px;
   padding: 5px;
-  max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
   justify-self: center;
@@ -180,7 +186,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   font-size: 1.3rem;
-  padding: 10px;
 }
 .window .contentbuttonsheading {
   background-color: transparent;
@@ -190,8 +195,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.3rem;
-  padding: 10px;
+  font-size: 111.3rem;
 }
 .window section {
   margin-top: 2px;
@@ -251,7 +255,6 @@ h1 {
 
 #StartMenu {
   min-width: 15rem;
-  min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
   min-height: fit-content;
   padding: 5px;
@@ -259,7 +262,6 @@ h1 {
   background-color: #d8d8d8;
   display: none;
   z-index: 9;
-  position: -webkit-sticky;
   position: sticky;
   top: 10rem;
 }/*# sourceMappingURL=style.css.map */
