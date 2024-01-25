@@ -8,7 +8,7 @@
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="styles/components/desktop/style.css" />
-  <link rel="icon" type="image/png" href="/assets/Images/favicon.png" />
+  <link rel="icon" type="image/png" href="/assets/Images/icons/about.png" />
 </head>
 
 <body>
@@ -16,8 +16,8 @@
     <div class="wrapperinner">
     <main class="desktopsub">
       <section>
-        <form name="Return to desktop" action="desktop.html"><input class="buttondesktop" type="submit"
-            value="Return to desktop" /></form>
+        <!--<form name="Return to desktop" action="desktop.html"><input class="buttondesktop" type="submit"
+            value="Return to desktop" /></form>-->
 
         <!-- window frame -->
         <div class="window">
@@ -77,8 +77,6 @@
                   who really kicked off our drive to join the New Old Web. Currently working on a game, as I understand
                   it; I'm sure he'll tell you all about it in his blog. Make sure you check out his OCs too!</p>
 
-                </br>
-
                 <a href="https://gonnefishin.neocities.org/" alt="Gummyjon"><img
                   src="./assets/images/buttons/gummyjon.png" style="vertical-align: middle" width=132px
                   height=48px /></a>
@@ -133,7 +131,83 @@
         </div>
       </section>
     </main>
-    <div class="taskbar"></div>
+        <!-- Taskbar -->
+        <div class="taskbar">
+          <!-- Start Menu (Desktop) -->
+          <a
+            href="/desktop.html"
+            class="taskbarpopout"
+            style="width: 5rem; color: black"
+          >
+            <img src="assets/images/favicon.png" />
+            <p style="margin-left: 0.4rem; margin-right: 0.4rem">HOME</p>
+          </a>
+
+          <!-- Writing -->
+          <a
+            href="/writing.html"
+            class="taskbarpopout"
+            style="color: black; margin-left: 0.5rem"
+          >
+            <img
+              src="assets/images/icons/mycomputer.png"
+              style="width: 16px; height: 16px"
+            />
+            <p style="margin-left: 0.4rem; margin-right: 0.4rem">WRITING</p>
+          </a>
+
+          <!-- Photography -->
+          <a
+            href="/photography.html"
+            class="taskbarpopout"
+            style="color: black; margin-left: 0.5rem"
+          >
+            <img
+              src="assets/images/icons/folder.png"
+              style="width: 16px; height: 16px"
+            />
+            <p style="margin-left: 0.4rem; margin-right: 0.4rem">PHOTOGRAPHY</p>
+          </a>
+
+          <!-- Campfire -->
+          <a
+            href="/sharedwriting.html"
+            class="taskbarpopout"
+            style="color: black; margin-left: 0.5rem"
+          >
+            <img
+              src="assets/images/icons/bonfire.png"
+              style="width: 16px; height: 16px"
+            />
+            <p style="margin-left: 0.4rem; margin-right: 0.4rem">CAMPFIRE</p>
+          </a>
+
+          <!-- About -->
+          <a
+            href="/about.html"
+            class="taskbarpopout"
+            style="color: black; margin-left: 0.5rem"
+          >
+            <img
+              src="assets/images/icons/about.png"
+              style="width: 16px; height: 16px"
+            />
+            <p style="margin-left: 0.4rem; margin-right: 0.4rem">ABOUT</p>
+          </a>
+
+          <!-- Bluesky -->
+          <a
+            href="https://bsky.app/profile/dadhoc.bsky.social"
+            class="taskbarpopout"
+            style="color: black; margin-left: 0.5rem"
+          >
+            <img
+              src="assets/images/icons/bsky.png"
+              style="width: 16px; height: 16px"
+            />
+            <p style="margin-left: 0.4rem; margin-right: 0.4rem">BLUESKY</p>
+          </a>
+        </div>
   </div>
   </div>
 </body>
