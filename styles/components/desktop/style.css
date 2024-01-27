@@ -50,7 +50,6 @@ h1 {
   display: block;
   background-color: #008080;
   font-family: "W95FA", monospace;
-  height: 100vh;
 }
 .desktopmain {
   display: grid;
