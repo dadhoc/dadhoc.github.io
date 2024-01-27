@@ -64,10 +64,8 @@ h1 {
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  max-height: 75vh;
   margin: auto;
   width: auto;
-  aspect-ratio: 4/3;
 }
 .desktopsub {
   display: grid;
@@ -180,6 +178,7 @@ h1 {
   overflow: scroll;
   padding: 5px;
   flex-grow: 1;
+  border: inset;
 }
 .window .contentbuttons {
   display: flex;
@@ -242,8 +241,7 @@ h1 {
   background-color: #c0c0c0;
   text-decoration: none;
   font-size: 1rem;
-  color: #fdffff;
-  text-shadow: 1px 1px 1px black;
+  color: black;
   box-shadow: inset -1px -1px black, inset -2px -2px #d8d8d8, inset 1px 1px #ebebeb, inset 2px 2px #d8d8d8;
 }
 .buttondesktop:hover {

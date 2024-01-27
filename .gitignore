@@ -21,5 +21,8 @@ node_modules/
 #window template
 window_template.html
 
+#page template
+pagetemplate.html
+
 # Miscellaneous
 reference/

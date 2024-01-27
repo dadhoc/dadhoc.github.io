@@ -18,7 +18,6 @@
   background-color: $teal;
   font-family: "W95FA", monospace;
   height: 100vh;
-  
 
   &main {
     display: grid;
@@ -32,10 +31,9 @@
       align-items: center;
       justify-content: center;
       padding: 1rem;
-      max-height: 75vh;
+      //max-height: 75vh;
       margin: auto;
       width: auto;
-      aspect-ratio: 4/3;
     }
   }
 
@@ -57,7 +55,6 @@
       aspect-ratio: 4/3;
     }
   }
-
 }
 
 .icon {
@@ -166,6 +163,7 @@
     overflow: scroll;
     padding: 5px;
     flex-grow: 1;
+    border: inset;
 
     &buttons {
       display: flex;
@@ -184,8 +182,8 @@
         flex-direction: column;
         align-items: center;
         font-size: 111.3rem;
-      //  padding: 10px;
-        }
+        //  padding: 10px;
+      }
     }
   }
 
@@ -242,21 +240,20 @@
   background-color: $taskbardark;
   text-decoration: none;
   font-size: 1rem;
-  color: $white;
-  text-shadow: 1px 1px 1px black;
+  color: black;
+  // text-shadow: 1px 1px 1px white;
 
   box-shadow: inset -1px -1px black, inset -2px -2px $taskbarmid,
     inset 1px 1px $taskbarlight, inset 2px 2px $taskbarmid;
 
   // States
 
-  &:hover{
+  &:hover {
     background-color: $taskbarmid;
   }
 
-  &:active{
+  &:active {
     box-shadow: inset 1px 1px black, inset 2px 2px $taskbarmid,
-    inset -1px -1px $taskbarlight, inset -2px -2px $taskbarmid; 
+      inset -1px -1px $taskbarlight, inset -2px -2px $taskbarmid;
   }
-
 }
