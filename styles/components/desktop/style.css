@@ -54,7 +54,6 @@ h1 {
 .desktopmain {
   display: grid;
   background-color: #008080;
-  font-family: "W95FA", monospace;
   justify-content: start;
 }
 .desktopmain section {
@@ -63,8 +62,8 @@ h1 {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  max-height: 75vh;
   margin: auto;
-  width: auto;
 }
 .desktopsub {
   display: grid;

@@ -17,12 +17,11 @@
   display: block;
   background-color: $teal;
   font-family: "W95FA", monospace;
-  //height: 100vh;
+  //max-height: 95vh;
 
   &main {
     display: grid;
     background-color: $teal;
-    font-family: "W95FA", monospace;
     justify-content: start;
 
     section {
@@ -31,9 +30,8 @@
       align-items: center;
       justify-content: center;
       padding: 1rem;
-      //max-height: 75vh;
+      max-height: 75vh;
       margin: auto;
-      width: auto;
     }
   }
 
