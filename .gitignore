@@ -24,6 +24,9 @@ window_template.html
 #page template
 pagetemplate.html
 
+#old index
+index-OLD.html
+
 # Miscellaneous
 reference/
 *.aseprite
